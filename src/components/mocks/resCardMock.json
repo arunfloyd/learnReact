@@ -1,0 +1,69 @@
+{
+    "info": {
+        "id": "482719",
+        "name": "Burger Tales",
+        "cloudinaryImageId": "ylyk7xf4kkrb3isijkdd",
+        "locality": "Beach Road",
+        "areaName": "Kuttichira",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+            "Fast Food",
+            "Snacks",
+            "Beverages"
+        ],
+        "avgRating": 4.1,
+        "parentId": "51465",
+        "avgRatingString": "4.1",
+        "totalRatingsString": "7",
+        "sla": {
+            "deliveryTime": 39,
+            "lastMileTravel": 5.9,
+            "serviceability": "SERVICEABLE",
+            "slaString": "39 mins",
+            "lastMileTravelString": "5.9 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-03-26 22:30:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "maxDuration": "3000",
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+        "context": "seo-data-2ab0c859-37ae-4e8f-8063-5a582898ca96"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/burger-tales-beach-road-kuttichira-482719",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_BCP_byName"
+}
