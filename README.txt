@@ -1,7 +1,8 @@
 --------------------------------------------------------------------------------------------------------    
                                    <---This is the NOTES for React Learning --->
 ------------------------------------------------------------------------------------------------------------
-" Transitive Dependencies "  ==> Dependency which depends on other dependency Eg: Parcel have many Dependencies and it have other dependency
+" Transitive Dependencies "  ==> Dependency which depends on other dependency 
+                             Eg: Parcel have many Dependencies and it have other dependency
 
 ==> What are the things PARSER done??
 
@@ -12,7 +13,7 @@ Parser will take all the development things
 --> File Watcher Algorithm - C++ (Wrote)
 --> BUNDLING
 --> MINFIY
---> Cleaning Our Code
+--> Cleaning Our Code;
 --> Dev and production Build
 --> Super fast Build Algorithm
 --> Image Optimization
@@ -31,20 +32,20 @@ Parser will take all the development things
 
 --> JSX is not Html in JavaScript
 
---> JSX is HTML like or XMK -like syntax
+--> JSX is HTML like or XML -like syntax
 
 --> JSX is a react element
 
 --> JSX will transpiled before it reaches the JS Engine
-(convert the code which have been in html to JS engine Understandable or React understand)
+    (convert the code which have been in html to JS engine Understandable or React understand)
 
 --> So here it PARSER(Manage) and the BABEL will make the convertion of JSX into react code
 
--->The JSX converted into the React.createElement actually 
+--> The JSX converted into the React.createElement actually 
 
--->The BABEL is converting the JSX to React code
+--> The BABEL is converting the JSX to React code
 
--->JSX is aware of Cross site scripting 
+--> JSX is aware of Cross site scripting 
 
 
 
@@ -76,7 +77,7 @@ Parser will take all the development things
               Props - Properties
 .............................................................................
 
-->It is something which can be passed something to components
+-> It is something which can be passed something to components
 
 -> Props are just arguments of the functions
 
@@ -84,7 +85,7 @@ Parser will take all the development things
 
 
 ..................................................................
-ConfigDrivenUI
+             ConfigDrivenUI
 .................................................................
 
 -> Controlling UI using datas
@@ -96,23 +97,20 @@ ConfigDrivenUI
 ....................................................................
                    Key looping
 ....................................................................
-The Child Components should be uniquely represented because at the time of the dynamic changes
-when a new thing is appended react can't find it as a new one .
+ -> The Child Components should be uniquely represented because at the time of the dynamic changes
+    when a new thing is appended react can't find it as a new one .
 
-That time react will rerender all this cards .
-it treat all as same 
+ -> That time react will rerender all this cards .it treat all as same 
 
-But when we guve a unique id then react will understand which is the new and it render only the new 
+ -> But when we give a unique id then react will understand which is the new and it render only the new 
+    so it can be a better Optimization .
 
-so it can be a better Optimization .
+ -> "React itself says that never use the loop index as the keys"
+    not usig keys (not acceptable) <<< using index key <<<<<<<<<<<<<< unique id(Best Method)
 
-"React itself says that never use the loop index as the keys"
+ -> When you are looping you should pass a key as a variable like this 
 
-not usig keys (not acceptable) <<< using index key <<<<<<<<<<<<<< unique id(Best Method)
-
-When you are looping you should pass a key as a variable like this 
-
-Eg:  "<ResturantCard key={restaurant.info.id} resData={restaurant} />"
+  Eg: "<ResturantCard key={restaurant.info.id} resData={restaurant} />"
                      ........................
 
 const Body = () => {
@@ -128,25 +126,6 @@ const Body = () => {
     </div>
   );
 };
-.........................................................................................
-                         Planning Our Resturant things
-......................................................................................
-/**
- * Planning Components
- *
- * Header
- *  - Logo
- *  - Nav items
- * Body
- *  -Search
- *  -RestaruntCOntaier
- *    -RestaurantCards
- * Footer
- *  - Links
- *  - Copyright
- *
- */
-
 
 ..................................................................................
                            Why React ??? !!
@@ -160,9 +139,9 @@ const Body = () => {
 
 
 ..............................................................
-Never Use Hard Coded things in the component file 
+ -> Never Use Hard Coded things in the component file 
 
-You should save it in the folder Utils 
+ -> You should save it in the folder Utils 
 ...............................................................
 
 
@@ -180,10 +159,11 @@ You should save it in the folder Utils
 
 >>>>> Why React is fast  ?? 
 
- Because React is doing efficent Manipulation of DOM .
- How ? it has a Virtual DOM 
- it having DIff Algorithm 
- React can efficently find out the differnece between virtual DOM and update the UI
+-> Because React is doing efficent Manipulation of DOM .
+-> How ? 
+     -> It has a Virtual DOM 
+     -> It having Diff Algorithm 
+-> React can efficently find out the differnece between virtual DOM and update the UI
 
 !!!...........................................................................!!!
 
@@ -192,20 +172,28 @@ You should save it in the folder Utils
                             React Hooks !!
 ..................................................................................
 
-->  State variable - super powerful variable you can use Hook 
+-> State variable - super powerful variable you can use Hook 
 
 -> Noraml JS Utility given by React is Hook super power 
 
 ->Types of  important !! Hooks 
      
-      -> useState() - superpowerful state variable in React
-                    - import {useState} from "react" : import as named 
-                    -When ever a state variable updates react rerender the component
+      -> useState() - Superpowerful state variable in React
+                    - Import {useState} from "react" : import as named 
+                    - When ever a state variable updates react rerender the component
                     
-      -> useEffect() - 
+      -> useEffect() - UseEffect Hooks which is normal JS function in which react give super power
+                       which have specific function purpose
 
+                     - useEffect(which have two arguments)    
+                     - when this call back function called is after the render 
+               Eg:-  
+                     useEffect(() => {
+                        console.log("UseEffect");
+                             }, []);
+                    - First the body function will render & after the render cycle the useEffect callback is called  
 
-      ...................................................
+...................................................................................
     ->  React uses Reconcilation Algorithm (also known as REACT FIBER)
 
 ............Virtual DOM .......................
@@ -278,18 +266,6 @@ You should save it in the folder Utils
  --> Gives better UX 
 
 
->>> UseEffect Hooks which is normal JS function in which react give super power
-    which have specific function purpose
-
->>> useEffect(which have two arguments)    
-
-  -> when this call back function called is after the render 
-  
-    useEffect(() => {
-       console.log("UseEffect");
-    }, []);
-
-    ->First the body function will render & after the render cycle the useEffect callback is ca;;ed  
 
 >>> Shimmer UI
   > Like lasy Loading like dummy UI
@@ -303,9 +279,6 @@ You should save it in the folder Utils
 >>> State React Variable  <<<
 
  -> whenever state variables update ,react triggers a Reconcilation cycle(re-renders the component)
-
-
-
 
 
 > > > > > Use Effect Hook Imp !!  < < < < < < 
@@ -322,8 +295,7 @@ You should save it in the folder Utils
                console.log("Header")
                 },[])
  >> 3rd Case -> if dependency array is [btnNameReact] (or some Dependencies are there) =>  
-                                                      called Everything [btnNameReact](dependency updated) updated.
-
+                              called Everythime [btnNameReact](dependency updated) updated.
 
 
 > > > > > UseState Hook Imp !!  < < < < < <
@@ -332,7 +304,7 @@ You should save it in the folder Utils
 
  -> It used to create local state variables inside the functional components  
 
- -> Call the use State insidw the body 
+ -> Call the use State inside the body 
 
  -> Don't create useState inside a condition ,for loop,inside a function => Makes inconsistency in program
 
@@ -370,8 +342,8 @@ You should save it in the folder Utils
 >>>>>>>>>>>>>>>> Comparison between two of them <<<<<<<<<<<<<<<<
 
 >>>> Functional component
-  Eg:   class UserClass extends React.Component{
-        render(){
+  Eg:   const functional =()=>{
+      
           return(
             <div className="user-card">
                   <h2>Name : Arun</h2>
@@ -379,7 +351,7 @@ You should save it in the folder Utils
                   <h4>Contact : @arunfloyd</h4>
             </div>
         )
-    }
+    
 }
 >>>> Class based Component
 Eg: class UserClass extends React.Component{
@@ -467,7 +439,7 @@ Eg: class UserClass extends React.Component{
 
    >>> Sass & SCSS
 
-   >>Styled Component
+   >> Styled Component
 
    >> Exported and Use like library -- Material UI --Chakara UI  -- Ant UI
 
@@ -487,7 +459,7 @@ Eg: class UserClass extends React.Component{
 
 >>> Redux 
  
-  >> Used for handling the state Management of the application 
+  >> Used for handling the state management of the application 
   >> Redux offers easy debugging  
   >> It is Not Mandatory in your application 
   >> Redux and React is Seperate library .
